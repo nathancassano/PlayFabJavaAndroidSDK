@@ -10,18 +10,20 @@ PlayFab® is a registered trademark of PlayFab, Inc.
 2. Add a playfab.xml file in your project resources. Change the playfab_titleid to your PlayFab TitleId.
 res/values/playfab.xml
 
+```xml
 <resources>
     <string name="playfab_titleid">test</string>
     <bool name="playfab_use_development_environment">True</bool>
     <string name="playfab_development_environment_url">.playfabsandbox.com</string>
     <string name="playfab_production_environment_url">.playfabapi.com</string>
 </resources>
-
+```
 
 === Example Code ===
 
 Here is a quick API usage code sample. 
 
+```java
 import com.playfab.*;
 ...
 
@@ -49,3 +51,4 @@ LoginWithAndroidDeviceID resultCallback = new LoginWithAndroidDeviceID()
 };
 
 playfab.LoginWithAndroidDeviceID(request, resultCallback);
+```
