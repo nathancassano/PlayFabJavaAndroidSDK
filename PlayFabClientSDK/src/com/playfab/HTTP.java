@@ -93,7 +93,6 @@ public class HTTP extends AsyncTask<String, Object, Object>
 		method.addHeader("Content-Type", "application/json");
 		if ( authType != null )
 			method.addHeader(authType, authKey);
-		method.addHeader("X-ReportErrorAsSuccess", "true");
 		method.addHeader("X-PlayFabSDK", Version.getVersionString ());
 
 		HttpResponse res = null;
